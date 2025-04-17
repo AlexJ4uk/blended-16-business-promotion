@@ -23,15 +23,12 @@
     <!-- Header -->
 
     <header class="header">
-      <div class="container">
+      <div class="header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
-            ><img
-              src="./images/logo.svg"
-              alt="logo"
-              width="39"
-              height="36"
-            />Product</a
+            ><svg class="header-logo" width="40" height="36">
+              <use href="./images/color_icons.svg#logo"></use></svg
+            ><span class="header-logo-text">Product</span></a
           >
           <ul class="nav-list">
             <li><a class="nav-link current" href="./index.html">Product</a></li>
@@ -52,11 +49,65 @@
             </button>
           </li>
         </ul>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="icon-menu" width="32" height="32">
+            <use href="./images/non_color_icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/non_color_icons.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="nav-link current" href="./index.html">Product</a>
+              </li>
+              <li><a class="nav-link" href="./customers.html">Customers</a></li>
+              <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+              <li><a class="nav-link" href="">Resources</a></li>
+            </ul>
+          </nav>
+          <ul class="header-menu-list-btn">
+            <li>
+              <button class="header-menu-btn in" type="button">Sign In</button>
+            </li>
+            <li>
+              <button class="header-menu-btn up" type="button">Sign Up</button>
+            </li>
+          </ul>
+          <ul class="menu-soc-list">
+            <li class="soc-item">
+              <a class="soc-link" href=""
+                ><svg class="soc-icon" width="40" height="40">
+                  <use href="./images/non_color_icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="soc-item">
+              <a class="soc-link" href=""
+                ><svg class="soc-icon" width="40" height="40">
+                  <use href="./images/non_color_icons.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="soc-item">
+              <a class="soc-link" href=""
+                ><svg class="soc-icon" width="40" height="40">
+                  <use href="./images/non_color_icons.svg#twitter"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <div class="hero-text-container">
             <h1 class="hero-title">Work at the speed of thought</h1>
@@ -87,7 +138,7 @@
         </div>
       </section>
       <!-- Product -->
-      <section class="product">
+      <section class="product hidden">
         <div class="container">
           <h2 class="product-title">Product was Built Specifically for You</h2>
           <ul class="product-list">
@@ -147,7 +198,7 @@
           <button class="product-btn" type="button">SIGN UP NOW</button>
         </div>
       </section>
-      <section>
+      <section class="hidden">
         <h2><span>Effortless Validation for </span>Management</h2>
         <p>
           The Myspace page defines the individual, his or her characteristics,
@@ -176,7 +227,7 @@
           height="500"
         />
       </section>
-      <section>
+      <section class="hidden">
         <img
           src="./images/support-img.svg"
           alt="support process"
@@ -222,7 +273,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="hidden">
         <h3>Optimisation for</h3>
         <h2>Collaborative</h2>
         <p>
@@ -253,7 +304,7 @@
           height="500"
         />
       </section>
-      <section>
+      <section class="hidden">
         <h2>Quick & Easy Process</h2>
         <p>
           Do you require some help for your project: Conception workshop,
@@ -299,7 +350,7 @@
           <li><button type="button">Contact our expert</button></li>
         </ul>
       </section>
-      <section>
+      <section class="hidden">
         <h2>Contents Strategies</h2>
         <p>
           We focus on ergonomics and meeting you where you work. It's only a
@@ -339,7 +390,7 @@
         </ul>
       </section>
       <!-- Price table -->
-      <section>
+      <section class="hidden">
         <h2>Price Table</h2>
         <p>We offer competitive price</p>
         <ul>
@@ -381,7 +432,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="hidden">
         <h2>What Clients Say</h2>
         <p>
           Problems trying to resolve the conflict between the two major realms
@@ -456,7 +507,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="hidden">
         <h2>Join 100 Compannies who boost their business with Product</h2>
         <img
           src="./images/screen-image.png"
@@ -466,11 +517,28 @@
         /><button>Get This</button>
       </section>
     </main>
-    <footer>
+    <footer class="hidden">
       <a href="./index.html">Product</a>
-      <a href=""
-        ><img src="./images/socials.png" alt="Socials" width="152" height="40"
-      /></a>
+      <ul class="menu-soc-list">
+        <li class="soc-item">
+          <a class="soc-link" href=""
+            ><svg class="soc-icon" width="40" height="40">
+              <use href="./images/icons.svg#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="soc-item">
+          <a class="soc-link" href=""
+            ><svg class="soc-icon" width="40" height="40">
+              <use href="./images/icons.svg#facebook"></use></svg
+          ></a>
+        </li>
+        <li class="soc-item">
+          <a class="soc-link" href=""
+            ><svg class="soc-icon" width="40" height="40">
+              <use href="./images/icons.svg#twitter"></use></svg
+          ></a>
+        </li>
+      </ul>
       <ul>
         <li>
           <p>Resource</p>
@@ -511,6 +579,7 @@
       </ul>
       <p>Made With Love By Figmaland All Right Reserved</p>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
