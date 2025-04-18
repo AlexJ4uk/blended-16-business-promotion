@@ -122,7 +122,7 @@ pointer-events: auto;
 }
 
 .header-menu-btn {
-font-weight: 600;
+    font-weight: 600;
     font-size: 16px;
     color: #173a56;
     background-color: #fff;
@@ -434,21 +434,21 @@ background-color: #024139;
 }
 
 .management-img {
-    max-width: 349px;
+    max-width: 350px;
 }
 
 .management-text-wrap {
     max-width: 334px;
 }
 
-.management-title-part {
+.title-part {
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 8px;
 }
 
 .management-title {
     font-size: 32px;
+    line-height: 1.6;
     margin-bottom: 16px;
 }
 
@@ -475,3 +475,254 @@ background-color: #024139;
 .management-item {
     margin-bottom: 16px;
 }
+
+/* Support */
+
+.support {
+    padding: 50px 0;
+}
+
+.support .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px
+}
+
+.support-img {
+    max-width: 350px;
+}
+
+.support-text-wrap {
+    max-width: 340px;
+}
+
+.support-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.support-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 16px;
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.support-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.support-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.support-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.92px solid #fff;
+    border-radius: 14px;
+    width: 35px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    flex-shrink: 0;
+    fill: #fff;
+}
+
+.support-icon-one {
+    background-color: #f90;
+}
+
+.support-icon-two {
+    background-color: #f03e3d;
+}
+
+.support-icon-three {
+    background-color: #4d8dff;
+}
+
+/* Collaboration */
+
+.collaboration {
+    padding: 50px 0;
+}
+
+.collaboration .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 50px
+}
+
+.collaboration-img {
+    max-width: 350px;
+}
+
+.collaboration-text-wrap {
+    max-width: 344px;
+}
+
+.collaboration-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.collaboration-title-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 16px;
+}
+
+.collaboration-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 12px;
+}
+
+.collaboration-sub-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.collaboration-item {
+    margin-bottom: 16px;
+}
+
+/* Team */
+
+.team {
+    padding: 50px 0;
+}
+
+.team-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 338px;
+    margin-bottom: 40px;
+}
+
+.team-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+.team-img {
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.team-1 {
+    border: 3px solid #ff0909;
+}
+
+.team-2 {
+    border: 3px solid #02897a;
+}
+
+.team-3 {
+    border: 3px solid #035b81;
+}
+
+.team-4 {
+    border: 3px solid #740a76;
+}
+
+.team-item-text {
+    font-weight: 500;
+    font-size: 16px;
+line-height: 1.6;
+    padding: 8px 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2f281e;
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+    width: 241px;
+    height: 70px;
+    border-radius: 26.5px;
+}
+
+.team-button {
+    min-width: 216px;
+    height: 53px;
+    background-color: #02897a;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Strategies */
+
+.strategies {
+    padding: 50px 0;
+}
+
+.strategies-title {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.strategies-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+text-align: center;
+padding-bottom: 40px;
+}
+
+
+.strategies-img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.stategies-text-part {
+    font-weight: 700;
+}
+
+.strategies-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 12px;
+    text-align: start;
+}
+
