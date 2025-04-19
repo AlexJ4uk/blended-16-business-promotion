@@ -798,6 +798,11 @@ padding-bottom: 40px;
     color: #fff;
 }
 
+/* .price-amount:hover,
+.price-amount:focus,
+.currency:hover,
+.currency:focus */
+
 /* btn:hover */
 /* part-text:hover */
 
@@ -854,6 +859,11 @@ padding-bottom: 40px;
     color: #afafaf;
 }
 
+.per-month:hover,
+.per-month:focus {
+color: #e0e0e0;
+}
+
 .price-details-item-text {
     text-align: center;
     font-weight: 500;
@@ -878,4 +888,12 @@ padding-bottom: 40px;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.price-btn:hover,
+.price-btn:focus {
+    background-color: #fff;
+    color: #02897a;
 }
